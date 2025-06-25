@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'navigationButtons.dart';
+import 'header.dart';
 
 void main() {
   runApp(Jogo2048App());
@@ -15,9 +16,8 @@ class _Jogo2048State extends State<Jogo2048App>{
       title: "Jogo 2048",
       home: Column(
         children: [
-        createNavigationButtons(),
-        createNavigationButtons(),
-        createNavigationButtons(),
+          createHeader(),
+          createNavigationButtons()
         ]
       ), //Dentro dos argumentos de MaterialApp, por isso a virgula
     );//Tela da aplicaçao
