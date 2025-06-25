@@ -19,7 +19,7 @@ class _Jogo2048State extends State<Jogo2048App>{
         children: [
           createHeader(),
           SizedBox(height: 10),//Espaço vazio, para separar os Blocos
-          create6v6Grid(),
+          createGrid(5,75),
           SizedBox(height: 10),//Espaço vazio, para separar os Blocos
           createNavigationButtons()
         ]
