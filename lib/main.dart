@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'navigationButtons.dart';
 import 'header.dart';
+import 'gridView.dart';
 
 void main() {
   runApp(Jogo2048App());
@@ -17,6 +18,9 @@ class _Jogo2048State extends State<Jogo2048App>{
       home: Column(
         children: [
           createHeader(),
+          SizedBox(height: 10),//Espaço vazio, para separar os Blocos
+          create6v6Grid(),
+          SizedBox(height: 10),//Espaço vazio, para separar os Blocos
           createNavigationButtons()
         ]
       ), //Dentro dos argumentos de MaterialApp, por isso a virgula

@@ -9,7 +9,7 @@ Widget createHeader() {
       Row(
         children: [
           Text("Jogo 2048",style: TextStyle(fontSize: 20, color: Colors.orangeAccent),),
-          Text("    "),
+          Spacer(),
           Text("Movimentos: 0", style: TextStyle(fontSize: 20, color: Colors.orangeAccent),)
         ],
       ),
@@ -22,12 +22,12 @@ Widget createHeader() {
               onPressed: (){},//nivelFacil()
               child: Text("Fácil", style: TextStyle(fontSize: 20, color: Colors.black),)
           ),
-          Text(" "),
+          Spacer(),//Espaçador
           ElevatedButton(
               onPressed: (){},//nivelMedio()
               child: Text("Médio", style: TextStyle(fontSize: 20, color: Colors.black),)
           ),
-          Text(" "),
+          Spacer(),//Espaçador
           ElevatedButton(
               onPressed: (){},//nivelDificil()
               child: Text("Difícil", style: TextStyle(fontSize: 20, color: Colors.black),)
